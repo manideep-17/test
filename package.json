@@ -1,8 +1,17 @@
 {
-  "name": "test",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@observability/react-app",
+  "private": false,
+  "version": "0.1.0",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "publishConfig": {
+    "registry": "https://us-central1-npm.pkg.dev/observability-306006/test-npm-repo",
+    "access": "restricted"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -16,7 +25,9 @@
     "test:module": "jest src/tests/module.test.js",
     "test:isolated:coverage": "jest --coverage src/tests/isolated.test.js",
     "test:component:coverage": "jest --coverage src/tests/component.test.js",
-    "test:module:coverage": "jest --coverage src/tests/module.test.js"
+    "test:module:coverage": "jest --coverage src/tests/module.test.js",
+    "prepublishOnly": "npm run build",
+    "publish:gcp": "npm publish"
   },
   "dependencies": {
     "react": "^19.0.0",
