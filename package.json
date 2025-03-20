@@ -15,6 +15,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:stats": "VITE_BUILD_STATS=true vite build --debug",
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "jest",

@@ -1,0 +1,6 @@
+Bundle sizes:
+459B dist/index.html
+1.5K dist/vite.svg
+182K dist/assets/index-DahOpz9M.js
+4.0K dist/assets/react-CHdo91hT.svg
+1.4K dist/assets/index-D8b4DHJx.css

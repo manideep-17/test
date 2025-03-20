@@ -1,0 +1,6 @@
+{
+  "buildTimestamp": "2025-03-20T15:59:02Z",
+  "nodeVersion": "v23.9.0",
+  "npmVersion": "10.9.2",
+  "buildOutput": " > @observability/react-app@0.1.0 build > vite build  vite v6.2.2 building for production... transforming... ✓ 32 modules transformed. rendering chunks... computing gzip size... dist/index.html                   0.46 kB │ gzip:  0.30 kB dist/assets/react-CHdo91hT.svg    4.13 kB │ gzip:  2.14 kB dist/assets/index-D8b4DHJx.css    1.39 kB │ gzip:  0.71 kB dist/assets/index-DahOpz9M.js   186.87 kB │ gzip: 58.95 kB ✓ built in 444ms "
+}
