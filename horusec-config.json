@@ -1,0 +1,38 @@
+{
+  "horusecCliFilesOrPathsToIgnore": [
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/.git/**",
+    "**/tmp/**",
+    "**/.vscode/**"
+  ],
+  "horusecCliFalsePositiveHashes": [],
+  "horusecCliRiskAcceptHashes": [],
+  "horusecCliSeveritiesToIgnore": [
+    "INFO"
+  ],
+  "horusecCliFilesOrExtensionsToIgnore": [
+    "**/*.md",
+    "**/*.lock"
+  ],
+  "horusecCliToolsToIgnore": [],
+  "horusecCliContainerBindProjectPath": "",
+  "horusecCliDisableDocker": true,
+  "horusecCliEnableCommitAuthor": false,
+  "horusecCliRepositoryAuthorization": "00000000-0000-0000-0000-000000000000",
+  "horusecCliRepositoryName": "test",
+  "horusecCliCertInsecureSkipVerify": false,
+  "horusecCliCertPath": "",
+  "horusecCliEnableGitHistoryAnalysis": false,
+  "horusecCliHeaders": {},
+  "horusecCliReturnErrorIfFoundVulnerability": false,
+  "horusecCliProjectPath": "./",
+  "horusecCliCustomRulesPath": "",
+  "horusecCliEnableInformationSeverity": false,
+  "horusecCliTimeoutInSecondsRequest": 300,
+  "horusecCliTimeoutInSecondsAnalysis": 600,
+  "horusecCliMonitorRetryInSeconds": 15,
+  "horusecCliShowVulnerabilitiesTypes": [
+    "Vulnerability"
+  ]
+} 
