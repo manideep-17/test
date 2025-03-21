@@ -1,0 +1,380 @@
+2025-03-20T16:08:09.127Z vite:config config file loaded in 45.15ms
+2025-03-20T16:08:09.129Z vite:env loading env files: [
+  '/Users/manideepreddyaliminati/Documents/Steerwise/profiling/test/.env',
+  '/Users/manideepreddyaliminati/Documents/Steerwise/profiling/test/.env.local',
+  '/Users/manideepreddyaliminati/Documents/Steerwise/profiling/test/.env.production',
+  '/Users/manideepreddyaliminati/Documents/Steerwise/profiling/test/.env.production.local'
+]
+2025-03-20T16:08:09.129Z vite:env env files loaded in 0.21ms
+2025-03-20T16:08:09.130Z vite:env using resolved env: {}
+2025-03-20T16:08:09.147Z vite:config using resolved config: {
+  plugins: [
+    'vite:build-metadata',
+    'vite:watch-package-data',
+    'alias',
+    'vite:react-babel',
+    'vite:react-refresh',
+    'vite:modulepreload-polyfill',
+    'vite:resolve',
+    'vite:html-inline-proxy',
+    'vite:css',
+    'vite:esbuild',
+    'vite:json',
+    'vite:wasm-helper',
+    'vite:worker',
+    'vite:asset',
+    'vite:wasm-fallback',
+    'vite:define',
+    'vite:css-post',
+    'vite:build-html',
+    'vite:worker-import-meta-url',
+    'vite:asset-import-meta-url',
+    'vite:force-systemjs-wrap-complete',
+    'commonjs',
+    'vite:data-uri',
+    'vite:rollup-options-plugins',
+    'vite:dynamic-import-vars',
+    'vite:import-glob',
+    'vite:build-import-analysis',
+    'vite:esbuild-transpile',
+    'vite:terser',
+    'vite:manifest',
+    'vite:ssr-manifest',
+    'vite:reporter',
+    'vite:load-fallback'
+  ],
+  build: {
+    target: [ 'es2020', 'edge88', 'firefox78', 'chrome87', 'safari14' ],
+    polyfillModulePreload: true,
+    modulePreload: { polyfill: true },
+    outDir: 'dist',
+    assetsDir: 'assets',
+    assetsInlineLimit: 4096,
+    sourcemap: false,
+    terserOptions: {},
+    rollupOptions: { onwarn: [Function: onwarn] },
+    commonjsOptions: { include: [ /node_modules/ ], extensions: [ '.js', '.cjs' ] },
+    dynamicImportVarsOptions: { warnOnError: true, exclude: [ /node_modules/ ] },
+    write: true,
+    emptyOutDir: null,
+    copyPublicDir: true,
+    manifest: false,
+    lib: false,
+    ssrManifest: false,
+    ssrEmitAssets: false,
+    reportCompressedSize: true,
+    chunkSizeWarningLimit: 500,
+    watch: null,
+    cssCodeSplit: true,
+    minify: 'esbuild',
+    ssr: false,
+    emitAssets: true,
+    createEnvironment: [Function: createEnvironment],
+    cssTarget: [ 'es2020', 'edge88', 'firefox78', 'chrome87', 'safari14' ],
+    cssMinify: true
+  },
+  esbuild: { jsxDev: false, jsx: 'automatic', jsxImportSource: undefined },
+  optimizeDeps: {
+    include: [
+      'react',
+      'react-dom',
+      'react/jsx-dev-runtime',
+      'react/jsx-runtime'
+    ],
+    exclude: [],
+    needsInterop: [],
+    extensions: [],
+    disabled: undefined,
+    holdUntilCrawlEnd: true,
+    force: false,
+    noDiscovery: false,
+    esbuildOptions: { preserveSymlinks: false, jsx: 'automatic' }
+  },
+  resolve: {
+    externalConditions: [ 'node' ],
+    extensions: [ '.mjs', '.js', '.ts', '.jsx', '.tsx', '.json' ],
+    dedupe: [ 'react', 'react-dom' ],
+    noExternal: [],
+    external: [],
+    preserveSymlinks: false,
+    alias: [
+      {
+        find: /^\/?@vite\/env/,
+        replacement: '/@fs/Users/manideepreddyaliminati/Documents/Steerwise/profiling/test/node_modules/vite/dist/client/env.mjs'
+      },
+      {
+        find: /^\/?@vite\/client/,
+        replacement: '/@fs/Users/manideepreddyaliminati/Documents/Steerwise/profiling/test/node_modules/vite/dist/client/client.mjs'
+      }
+    ],
+    mainFields: [ 'browser', 'module', 'jsnext:main', 'jsnext' ],
+    conditions: [ 'module', 'browser', 'development|production' ],
+    builtins: []
+  },
+  environments: {
+    client: {
+      define: undefined,
+      resolve: {
+        externalConditions: [ 'node' ],
+        extensions: [ '.mjs', '.js', '.ts', '.jsx', '.tsx', '.json' ],
+        dedupe: [ 'react', 'react-dom' ],
+        noExternal: [],
+        external: [],
+        preserveSymlinks: false,
+        alias: [
+          {
+            find: /^\/?@vite\/env/,
+            replacement: '/@fs/Users/manideepreddyaliminati/Documents/Steerwise/profiling/test/node_modules/vite/dist/client/env.mjs'
+          },
+          {
+            find: /^\/?@vite\/client/,
+            replacement: '/@fs/Users/manideepreddyaliminati/Documents/Steerwise/profiling/test/node_modules/vite/dist/client/client.mjs'
+          }
+        ],
+        mainFields: [ 'browser', 'module', 'jsnext:main', 'jsnext' ],
+        conditions: [ 'module', 'browser', 'development|production' ],
+        builtins: []
+      },
+      keepProcessEnv: false,
+      consumer: 'client',
+      optimizeDeps: {
+        include: [
+          'react',
+          'react-dom',
+          'react/jsx-dev-runtime',
+          'react/jsx-runtime'
+        ],
+        exclude: [],
+        needsInterop: [],
+        extensions: [],
+        disabled: undefined,
+        holdUntilCrawlEnd: true,
+        force: false,
+        noDiscovery: false,
+        esbuildOptions: { preserveSymlinks: false, jsx: 'automatic' }
+      },
+      dev: {
+        warmup: [],
+        sourcemap: { js: true },
+        sourcemapIgnoreList: [Function: isInNodeModules$1],
+        preTransformRequests: true,
+        createEnvironment: [Function: defaultCreateClientDevEnvironment],
+        recoverable: true,
+        moduleRunnerTransform: false
+      },
+      build: {
+        target: [ 'es2020', 'edge88', 'firefox78', 'chrome87', 'safari14' ],
+        polyfillModulePreload: true,
+        modulePreload: { polyfill: true },
+        outDir: 'dist',
+        assetsDir: 'assets',
+        assetsInlineLimit: 4096,
+        sourcemap: false,
+        terserOptions: {},
+        rollupOptions: { onwarn: [Function: onwarn] },
+        commonjsOptions: { include: [ /node_modules/ ], extensions: [ '.js', '.cjs' ] },
+        dynamicImportVarsOptions: { warnOnError: true, exclude: [ /node_modules/ ] },
+        write: true,
+        emptyOutDir: null,
+        copyPublicDir: true,
+        manifest: false,
+        lib: false,
+        ssrManifest: false,
+        ssrEmitAssets: false,
+        reportCompressedSize: true,
+        chunkSizeWarningLimit: 500,
+        watch: null,
+        cssCodeSplit: true,
+        minify: 'esbuild',
+        ssr: false,
+        emitAssets: true,
+        createEnvironment: [Function: createEnvironment],
+        cssTarget: [ 'es2020', 'edge88', 'firefox78', 'chrome87', 'safari14' ],
+        cssMinify: true
+      }
+    }
+  },
+  configFile: '/Users/manideepreddyaliminati/Documents/Steerwise/profiling/test/vite.config.js',
+  configFileDependencies: [
+    '/Users/manideepreddyaliminati/Documents/Steerwise/profiling/test/vite.config.js'
+  ],
+  inlineConfig: {
+    root: undefined,
+    base: undefined,
+    mode: undefined,
+    configFile: undefined,
+    configLoader: undefined,
+    logLevel: undefined,
+    clearScreen: undefined,
+    build: {}
+  },
+  root: '/Users/manideepreddyaliminati/Documents/Steerwise/profiling/test',
+  base: '/',
+  decodedBase: '/',
+  rawBase: '/',
+  publicDir: '/Users/manideepreddyaliminati/Documents/Steerwise/profiling/test/public',
+  cacheDir: '/Users/manideepreddyaliminati/Documents/Steerwise/profiling/test/node_modules/.vite',
+  command: 'build',
+  mode: 'production',
+  isWorker: false,
+  mainConfig: null,
+  bundleChain: [],
+  isProduction: true,
+  css: {
+    transformer: 'postcss',
+    preprocessorMaxWorkers: 0,
+    devSourcemap: false,
+    lightningcss: undefined
+  },
+  json: { namedExports: true, stringify: 'auto' },
+  server: {
+    port: 5173,
+    strictPort: false,
+    host: undefined,
+    allowedHosts: [],
+    https: undefined,
+    open: false,
+    proxy: undefined,
+    cors: {
+      origin: /^https?:\/\/(?:(?:[^:]+\.)?localhost|127\.0\.0\.1|\[::1\])(?::\d+)?$/
+    },
+    headers: {},
+    warmup: { clientFiles: [], ssrFiles: [] },
+    middlewareMode: false,
+    fs: {
+      strict: true,
+      deny: [ '.env', '.env.*', '*.{crt,pem}', '**/.git/**' ],
+      allow: [
+        '/Users/manideepreddyaliminati/Documents/Steerwise/profiling/test'
+      ]
+    },
+    preTransformRequests: true,
+    perEnvironmentStartEndDuringDev: false,
+    sourcemapIgnoreList: [Function: isInNodeModules$1]
+  },
+  builder: undefined,
+  preview: {
+    port: 4173,
+    strictPort: false,
+    host: undefined,
+    allowedHosts: [],
+    https: undefined,
+    open: false,
+    proxy: undefined,
+    cors: {
+      origin: /^https?:\/\/(?:(?:[^:]+\.)?localhost|127\.0\.0\.1|\[::1\])(?::\d+)?$/
+    },
+    headers: {}
+  },
+  envDir: '/Users/manideepreddyaliminati/Documents/Steerwise/profiling/test',
+  env: { BASE_URL: '/', MODE: 'production', DEV: false, PROD: true },
+  assetsInclude: [Function: assetsInclude],
+  logger: {
+    hasWarned: false,
+    info: [Function: info],
+    warn: [Function: warn],
+    warnOnce: [Function: warnOnce],
+    error: [Function: error],
+    clearScreen: [Function: clearScreen],
+    hasErrorLogged: [Function: hasErrorLogged]
+  },
+  packageCache: Map(1) {
+    'fnpd_/Users/manideepreddyaliminati/Documents/Steerwise/profiling/test' => {
+      dir: '/Users/manideepreddyaliminati/Documents/Steerwise/profiling/test',
+      data: {
+        name: '@observability/react-app',
+        private: false,
+        version: '0.1.0',
+        type: 'module',
+        files: [ 'dist' ],
+        main: './dist/index.js',
+        types: './dist/index.d.ts',
+        publishConfig: {
+          registry: 'https://us-central1-npm.pkg.dev/observability-306006/test-npm-repo',
+          access: 'restricted'
+        },
+        scripts: {
+          dev: 'vite',
+          build: 'vite build',
+          'build:stats': 'VITE_BUILD_STATS=true vite build --debug',
+          lint: 'eslint .',
+          preview: 'vite preview',
+          test: 'jest',
+          'test:watch': 'jest --watch',
+          'test:coverage': 'jest --coverage',
+          'test:isolated': 'jest src/tests/isolated.test.js',
+          'test:component': 'jest src/tests/component.test.js',
+          'test:module': 'jest src/tests/module.test.js',
+          'test:isolated:coverage': 'jest --coverage src/tests/isolated.test.js',
+          'test:component:coverage': 'jest --coverage src/tests/component.test.js',
+          'test:module:coverage': 'jest --coverage src/tests/module.test.js',
+          prepublishOnly: 'npm run build',
+          'publish:gcp': 'npm publish'
+        },
+        dependencies: {
+          '@observability/react-app': '^0.1.0',
+          react: '^19.0.0',
+          'react-dom': '^19.0.0'
+        },
+        devDependencies: {
+          '@babel/preset-env': '^7.26.9',
+          '@babel/preset-react': '^7.26.3',
+          '@eslint/js': '^9.21.0',
+          '@testing-library/jest-dom': '^6.6.3',
+          '@testing-library/react': '^16.2.0',
+          '@types/react': '^19.0.10',
+          '@types/react-dom': '^19.0.4',
+          '@vitejs/plugin-react': '^4.3.4',
+          'babel-jest': '^29.7.0',
+          eslint: '^9.21.0',
+          'eslint-plugin-react-hooks': '^5.1.0',
+          'eslint-plugin-react-refresh': '^0.4.19',
+          globals: '^15.15.0',
+          'identity-obj-proxy': '^3.0.0',
+          jest: '^29.7.0',
+          'jest-environment-jsdom': '^29.7.0',
+          vite: '^6.2.0'
+        }
+      },
+      hasSideEffects: [Function: hasSideEffects],
+      setResolvedCache: [Function: setResolvedCache],
+      getResolvedCache: [Function: getResolvedCache]
+    },
+    set: [Function (anonymous)]
+  },
+  worker: { format: 'iife', plugins: '() => plugins', rollupOptions: {} },
+  appType: 'spa',
+  experimental: { importGlobRestoreExtension: false, hmrPartialAccept: false },
+  future: undefined,
+  ssr: {
+    target: 'node',
+    optimizeDeps: { esbuildOptions: { preserveSymlinks: false } },
+    resolve: { conditions: undefined, externalConditions: undefined }
+  },
+  dev: {
+    warmup: [],
+    sourcemap: { js: true },
+    sourcemapIgnoreList: [Function: isInNodeModules$1],
+    preTransformRequests: false,
+    createEnvironment: [Function: defaultCreateDevEnvironment],
+    recoverable: false,
+    moduleRunnerTransform: false
+  },
+  webSocketToken: 'OPsfMOE8fduI',
+  getSortedPlugins: [Function: getSortedPlugins],
+  getSortedPluginHooks: [Function: getSortedPluginHooks],
+  createResolver: [Function: createResolver],
+  fsDenyGlob: [Function: arrayMatcher],
+  safeModulePaths: Set(0) {},
+  additionalAllowedHosts: []
+}
+vite v6.2.2 building for production...
+transforming...
+✓ 32 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.46 kB │ gzip:  0.30 kB
+dist/assets/react-CHdo91hT.svg    4.13 kB │ gzip:  2.14 kB
+dist/assets/index-D8b4DHJx.css    1.39 kB │ gzip:  0.71 kB
+dist/assets/index-DahOpz9M.js   186.87 kB │ gzip: 58.95 kB
+✓ built in 451ms
